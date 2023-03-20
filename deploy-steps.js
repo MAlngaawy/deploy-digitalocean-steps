@@ -108,6 +108,8 @@ CLIENT_URL=http://localhost:3000
  */
  
 // https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04
+
+//! follow this video to install mongo db because the below code is OLD ==>> ( https://www.youtube.com/watch?v=HhfnuGcB3wc )
  
 echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
  
@@ -130,7 +132,7 @@ use mernauth
 cd
 cd client
 npm install
-sudo npm install pm2 -g
+sudo npm install pm2 -g // instead o nodemon
 pm2 start server.js
  
 // now both backend frontend is running live
